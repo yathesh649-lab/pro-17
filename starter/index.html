@@ -2,116 +2,139 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Employee table</title>
+    <title>Staff Details Table</title>
 
     <style>
-        /* Complete the CSS according to the assignment requirements */
-
         body {
-            width: 750px;
-            margin: 0 auto;
+            width: 800px;
+            margin: 40px auto;
+            font-family: Arial, sans-serif;
+            background-color: #eef6ff;
         }
 
         table {
-            /* Add table styling */
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #34495e;
+            background-color: white;
         }
 
         caption {
-            /* Style the caption */
+            font-size: 180%;
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 15px;
         }
 
-        thead, tfoot {
-            /* Header/footer background */
+        thead {
+            background-color: #3498db;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #d5f5e3;
+            font-weight: bold;
         }
 
         th, td {
-            /* Add borders, padding and alignment */
+            border: 1px solid #555;
+            padding: 12px;
+            text-align: left;
         }
 
         .right {
-            /* Right-align numeric cells */
+            text-align: right;
         }
 
         .top {
-            /* Align department names to the top */
+            vertical-align: top;
         }
 
-        /* Add alternating row styling */
+        tbody tr:nth-child(even) td {
+            background-color: #f9ebea;
+        }
+
+        tbody tr:hover td {
+            background-color: #d6eaf8;
+        }
+
     </style>
 </head>
 
 <body>
 
 <table>
-    <!-- Add the caption -->
+
+    <caption>Staff Information Table</caption>
 
     <thead>
         <tr>
-            <!-- Add the four column headings -->
+            <th>Department</th>
+            <th>Employee Name</th>
+            <th>Email</th>
+            <th class="right">Experience (Years)</th>
         </tr>
     </thead>
 
     <tbody>
 
-        <!-- Editorial: 3 employees -->
-
         <tr>
-            <!-- Department cell should use rowspan -->
-            <td>Joel Murach</td>
-            <td>joelmurach@yahoo.com</td>
-            <td>22</td>
+            <th class="top" rowspan="3">Development</th>
+            <td>Arun Kumar</td>
+            <td>arun@gmail.com</td>
+            <td class="right">8</td>
         </tr>
 
         <tr>
-            <td>Anne Boehm</td>
-            <td>anne@murach.com</td>
-            <td>34</td>
+            <td>Divya Sharma</td>
+            <td>divya@gmail.com</td>
+            <td class="right">5</td>
         </tr>
 
         <tr>
-            <td>Zak Ruvalcaba</td>
-            <td>zak@modulemedia.com</td>
-            <td>4</td>
+            <td>Karthik Raj</td>
+            <td>karthik@gmail.com</td>
+            <td class="right">3</td>
         </tr>
 
-        <!-- Marketing: 2 employees -->
 
         <tr>
-            <!-- Add department cell -->
-            <td>Judy Taylor</td>
-            <td>judy@murach.com</td>
-            <td>39</td>
-        </tr>
-
-        <tr>
-            <td>Cyndi Vasquez</td>
-            <td>cyndi@murach.com</td>
-            <td>10</td>
-        </tr>
-
-        <!-- Customer Service: 2 employees -->
-
-        <tr>
-            <!-- Add department cell -->
-            <td>Kelly Slivkoff</td>
-            <td>kelly@murach.com</td>
-            <td>25</td>
+            <th class="top" rowspan="2">Design</th>
+            <td>Priya Devi</td>
+            <td>priya@gmail.com</td>
+            <td class="right">6</td>
         </tr>
 
         <tr>
-            <td>Juliette Baylon</td>
-            <td>juliette@murach.com</td>
-            <td>1</td>
+            <td>Rahul Kumar</td>
+            <td>rahul@gmail.com</td>
+            <td class="right">4</td>
+        </tr>
+
+
+        <tr>
+            <th class="top" rowspan="2">Support</th>
+            <td>Sanjay Kumar</td>
+            <td>sanjay@gmail.com</td>
+            <td class="right">7</td>
+        </tr>
+
+        <tr>
+            <td>Meena Lakshmi</td>
+            <td>meena@gmail.com</td>
+            <td class="right">2</td>
         </tr>
 
     </tbody>
 
     <tfoot>
         <tr>
-            <!-- Add total label and total -->
+            <th class="right" colspan="3">Total Experience</th>
+            <td class="right">35</td>
         </tr>
     </tfoot>
+
 </table>
 
 </body>
-</html
+</html>
